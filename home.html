@@ -14,6 +14,39 @@
 
 
     <style>
+        /* piyan */
+        body {
+		background-image: url("img/bgcard.jpg");
+		height: 100%;
+		/* Center and scale the image nicely */
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	#navnav	{
+	box-shadow: 5px 10px 25px #bbe1fa;
+	}
+	
+	#form1 {
+		position: relative;
+		width: 60%;
+		border-radius: 15px;
+	}
+	
+	#form2 {
+		position: absolute;
+		z-index: 2;
+		font-size: 2vw;
+		bottom: 8%;
+		margin-left: auto;
+		margin-righ: auto;
+		padding-left: 5px;
+		border-left: solid 3px #bbe1fa;
+	}
+
+    /* akhir piyan */
+
+    
         p {
             font-size: 30px;
         }
@@ -51,6 +84,194 @@
 </head>
 
 <body>
+
+
+<piyan>
+      
+ <!----------------		NavBar		------------->
+<nav id="navnav" class="navbar navbar-expand-lg navbar-light fixed-top" >
+	<a class="navbar-brand font-weight-bold" href="#"><i class="fa fa-gg" style="font-size:48px;color:red"></i>ProjecTnoW</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link text-white font-weight-bold" href="#">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link text-white font-weight-bold" href="#">Product</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link text-white font-weight-bold" href="#">News</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+
+<!---------		Carousel		--------->
+<div class="container-md">
+
+	<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+			<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+			<li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+		</ol>
+		
+		<div class="carousel-inner">
+			<div class="carousel-item active" data-interval="1500">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="carousel-caption d-none d-md-block text-dark">
+							<h2>First Slide Label</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+								sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+								Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+								Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.							
+							</p>
+							<i id="form2" class="fa fa-search"></i>
+							<input id="form1" class="form-control" type="text" placeholder="Your Email...">
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<img src="img/corausel2.png" class="d-block w-100" alt="...">
+					</div>
+				</div>
+			</div>
+			<div class="carousel-item" data-interval="1500">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="carousel-caption d-none d-md-block text-dark">
+							<h2>Second Slide Label</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+								sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+								Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+								Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.							
+							</p>
+							<i id="form2" class="fa fa-search"></i>
+							<input id="form1" class="form-control" type="text" placeholder="Your Email...">
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<img src="img/corausel1.png" class="d-block w-100" alt="...">
+					</div>
+				</div>
+			</div>
+			<div class="carousel-item" data-interval="1500">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="carousel-caption d-none d-md-block text-dark">
+							<h2>Third slide label</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+								sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+								Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+								Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.							
+							</p>
+							<i id="form2" class="fa fa-search"></i>
+							<input id="form1" class="form-control" type="text" placeholder="Your Email...">
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<img src="img/corausel3.png" class="d-block w-100" alt="...">
+					</div>
+				</div>
+			</div>
+		</div>
+	  
+	  
+	  
+	</div>
+
+</div>
+<!------------	Penutup Carousel	-------------->
+  
+  <!---------------		Content1 		---------------->
+</piyan>
+
+    <enggar>
+        <div class="container">
+            <div class="col-sm-12"> 
+              <div class="row">
+                <div class="col-sm-2">
+                  <img src="img/logo_android.png">
+                </div>
+                <div class="col-sm-2">
+                  <img src="img/logo_fbm.png">
+                </div>
+                <div class="col-sm-2">
+                  <img src="img/logo_ios.png">
+                </div>
+                <div class="col-sm-2">
+                  <img src="img/logo_line.png">
+                </div>
+                <div class="col-sm-2">
+                  <img src="img/logo_telegram.png">
+                </div>
+                <div class="col-sm-2">
+                  <img src="img/logo_whatsapp.png">
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <br>
+          <br>
+          <br>
+    
+    
+    
+    
+          <h1 class="col" style="text-align: center;">A simple, proven way to boost</h1>
+          <h1 class="col" style="text-align: center; ">your customer engagement</h1>
+          <br> <!--Headline-->
+    
+          <div class="container">
+            <div class="col-sm-12"> 
+              <div class="row" style="text-align: center;">
+                <div class="col-sm-3">
+                    <br>
+                    <img src="img/content1.png" class="card-img-top" alt="..." style="height: 50px; width: 50px;">
+                    <br>
+                    <br>
+                      <h4 class="card-title">Accesible Anytime</h4>
+                      <p class="card-text">Optimizing self-service technology, customers can easily contact you anytime, anywhere, 24/7.</p>
+                </div>
+                <div class="col-sm-3" >
+                    <br>
+                    <img src="img/content2.png" class="card-center" alt="..." style="height: 50px; width: 50px;">
+                    <br>
+                    <br>
+                      <h4 class="card-title">Omnichannel Integrated</h4>
+                      <p class="card-text">No matter the channel used to contact you, your customers will always get consistent experiences and you won't miss a thing.</p>
+                </div>
+                <div class="col-sm-3">
+                    <br>
+                    <img src="img/content3.png" class="card-img-top" alt="..." style="height: 50px; width: 50px;">
+                    <br>
+                    <br>
+                      <h4 class="card-title">Cost Effective</h4>
+                      <p class="card-text">Save operational costs without having to reduce any services, and even increase customer engagement.</p>
+                </div>
+                <div class="col-sm-3">
+                    <br>
+                    <img src="img/content4.png" class="card-img-top" alt="..." style="height: 50px; width: 50px;">
+                    <br>
+                    <br>
+                      <h4 class="card-title">Alternate Sales Channel</h4>
+                      <p class="card-text">Chatbots obviously can sell products. A recent study suggests that 70% people prefer texting rather thancalling.</p>
+                </div>
+              </div>
+            </div>
+          </div> <!--Penutup Container Content-->
+    </enggar>
 
     <cimiko>
         <section>
