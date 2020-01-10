@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
   <head>
@@ -6,15 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	
-	<!--------	File Icon w3school	------->
+	<link href="https://fonts.googleapis.com/css?family=Bitter&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Public+Sans&display=swap" rel="stylesheet">
+	<!-------	File Icon w3school	------->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-	<title>Hello, world!</title>
-	
+	<title>News Bro</title>
+
 <style>
 
 	/*	Piyan	*/
@@ -23,14 +25,125 @@
 	}
 	
 	/*	mengatur responsive */
-	header .container {
-		margin-top: 80px;
-		margin-left: 50px;
+	#news {
+		margin: 80px 0 0 50px;
+		display: inline-block;
+	}
+		
+	/*	Enggar	*/
+	.content {
+		position: relative;
+	}
+		
+	.card {
+		border: none;
+		margin-top: 5%;
+	}
+	
+	.card-img-top {
+		border-radius: 5%;
+	}
+	
+	.date {
+		width:25%;
+		background-color: #999;
+		color: #fff;
+		display: block;
+		font-size: 13px;
+		position: absolute;
+		margin: 30px auto 0;
+		padding: 1%;
+		text-align: center;
+		font-family: 'Bitter', serif;
+		font-weight: bold;
+	}
+	
+	.card-body {
+		line-height: 2;
+		text-align: justify;
+	}
+	
+	.card-title {
+		padding: 5% 0 0 0 ;
+		width: 100%;
+	}
+	
+	.card-subtitle {
+		padding: 0 0 5% 0;
+	}
+	.card-subtitle {
+		letter-spacing: 2px;
+		font-size: 1vw;
+	}
+	
+	.card-text {
+		padding: 0 0 5% 0;
+	}
+	
+	.btn-warning{
+		padding: 2% 4%;
+		color: #fff;
+		font-weight: bold;
+		font-family: 'Bitter', serif;
+		letter-spacing: 1px;
+	}
+	
+	.samping {
+		margin-top: 10%;
+	}
+	
+	form .form-control {
+		border-radius: 2vw;
+	}
+	
+	#carisamping {
+		z-index: 2;
+		position: absolute;
+		top: 0;
+		right: 20px;
+		margin:9% auto;
+		font-size: 25px;
+		text-align: right;
+	}
+	
+	.categories {
+		display: block;
+		color: #FFF;
+		padding: 3%;
+		border-radius: 1vw;
+		font-family: 'Public Sans', sans-serif;
+		letter-spacing: 2px;
+		
+		<!-------------	background gradient / pencampuran	----------->
+		background: linear-gradient(to right, #5f6caf , #bbe1fa); /* Standard syntax */
+		background: -webkit-linear-gradient(left, #5f6caf , #bbe1fa); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(right, red, #5f6caf , #bbe1fa); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(right, #5f6caf , #bbe1fa)
+	}
+	
+	.latepost {
+		display: block;
+		color: #FFF;
+		padding: 3%;
+		border-radius: 1vw;
+		font-family: 'Public Sans', sans-serif;
+		letter-spacing: 2px;
+		
+		<!-------------	background gradient / pencampuran	----------->
+		background: linear-gradient(to right, #5f6caf , #bbe1fa); /* Standard syntax */
+		background: -webkit-linear-gradient(left, #5f6caf , #bbe1fa); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(right, red, #5f6caf , #bbe1fa); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(right, #5f6caf , #bbe1fa)
+	}
+	
+	.txt-pinggir {
+		line-height: normal;
+		font-size: 15px;
 	}
 </style>
 </head>
 <body>
-  
+
  <!-----------------		NavBar		------------->
 <nav id="navnav" class="navbar navbar-expand-lg navbar-light fixed-top" >
 	<a class="navbar-brand font-weight-bold" href="#"><i class="fa fa-gg" style="font-size:48px;color:red"></i>ProjecTnoW</a>
@@ -53,7 +166,7 @@
 </nav>
 
 <header>
-	<div class="container">
+	<div class="container-fluid">
 		<div class="row">
 			<div class="col-12">
 				<a id="news" class="btn btn-primary btn-lg" href="">News</a>
@@ -61,6 +174,112 @@
 		</div>
 	</div>
 </header>
+
+<div class="container">
+	<div class="row">
+		<div class="col-lg-8">
+			<div class="card">
+				<img class="card-img-top"
+				src="https://cdn.idntimes.com/content-images/post/20190228/img-20190228-wa0011-70026357e7cbf928a8080dc054f0f8f8_600x400.jpg" 
+				alt="Foto Launching">
+				<p class="date font-weight-bold">20 Okt, 2019</p>
+				<div class="card-body">
+					<h4 class="card-title">APLIKASI HASIL KOLABORASI LENNA.AI DAN BNI RAIH 2 MEDALI EMAS PADA MALAM PENGHARGAN THE BEST CONTACT CENTER INDONESIA 2019</h4>
+						<h6 class="card-subtitle text-muted">DEVI AYU LESTARIAWARDS		|	BNI CALL CHATBOT		|	VIRTUAL ASSISTANT	|	NEWS </h6>
+							<p class="card-text text-muted font-weight-bold">
+								Pada 10 september 2019 yang lalu, applikasi BNI Call yang merupakan hasil kolaborasi Lenna.ai
+								dengan BNI meraih 2 penghargaan pada kategori “The Best Technology Innovation” dan “Media Digital” pada malam penganugerahan
+								The Best Contact Center Indonesia 2019. Prestasi ini tercatat setelah BNI dinilai sukses mengembangkan Aplikasi Contact
+								Center Digital yang memungkinkan nasabah dan masyarakat umum […]
+							</p>
+						<a class="btn btn-lg btn-warning" href="#"> Read More </a>
+				</div>
+			</div>
+			<div class="card">
+				<img class="card-img-top"
+				src="https://gadgetren.com/wp-content/uploads/2018/03/Vivo-V9-Grand-Launch-Header.jpg" 
+				alt="Foto Launching">
+				<p class="date font-weight-bold">22 Nov, 2019</p>
+				<div class="card-body">
+					<h4 class="card-title">LENNA PERKENALKAN PLATFORM SUPER CHATBOT DAN OMNICHAT VERSI 2.0</h4>
+						<h6 class="card-subtitle text-muted">DEVI AYU LESTARIAWARDS		|	BNI CALL CHATBOT		|	VIRTUAL ASSISTANT	|	NEWS </h6>
+							<p class="card-text text-muted font-weight-bold">
+								Sebagai startup yang fokus pada teknologi AI (Artificial Intelligence) khususnya solusi chatbot 
+								dan virtual assistant, Lenna (PT. Sinergi Digital teknologi) sejak 2017 terus berinovasi mengembangkan
+								teknologi guna menjawab kebutuhan pasar.	Seiring dengan pengembangan yang dilakukan, Lenna
+								meluncurkan produk terbarunya pada Kamis (27/06) di Loop Station Jakarta. Bertajuk “Lenna Talk :
+								Super Chatbot For Every Needs”, […]
+							</p>
+						<a class="btn btn-lg btn-warning" href="#"> Read More </a>
+				</div>
+			</div>
+				
+			<!------------		Pagination Non Aktif	--------------->
+			<nav aria-label="Page navigation example">
+				<ul class="pagination ">
+					<li class="page-item disabled">
+						<a class="page-link" href="#" tabindex="-1">Previous</a>
+					</li>
+					<li class="page-item"><a class="page-link" href="#">1</a></li>
+					<li class="page-item active">
+						<a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="page-item"><a class="page-link" href="#">3</a></li>
+					<li class="page-item">
+						<a class="page-link" href="#">Next</a>
+					</li>
+				</ul>
+			</nav>
+			<!---------------------	End Pagination	----------------->
+		
+		</div>
+		
+		
+		
+		<div class="col-lg-4">
+			<div class="samping">
+				<form>
+					<input class="form-control bg-light" type="text" placeholder="Cari kami kalau kamu tau">
+					<i id="carisamping" class="btn fa fa-search" style="color: #999;"></i><!----------	responsive dengan css sendiri		----------->
+				</form>
+				<hr>
+					<p class="categories">CATEGORIES</p>
+				<ul>
+					<li> Technology</li>
+				</ul>
+					<p class="latepost">LATE POST</p>
+				<hr>
+				<div class="card">
+					<p class="txt-pinggir">
+						<img class="float-left mr-3 img-thumbnail" style="width:50%; height: 40%;"
+						src="https://awsimages.detik.net.id/community/media/visual/2019/03/05/63a8a58e-0466-4db7-b248-075ba6f0e858_169.jpeg?w=700&q=90" alt="foto launching">
+						Aplikasi Hasil Kolaborasi Lenna.ai dan BNI Raih 2 Medali Emas Pada Malam Penghargan The Best Contact Center Indonesia 2019 <br>
+						<span class="text-muted">19/09/2019</span>
+					</p>	
+				</div>
+				<hr>
+				<div class="card">
+					<p class="txt-pinggir">
+						<img class="float-left mr-3 img-thumbnail" style="width:50%; height: 40%;"
+						src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx855R6Q-ebaGXR-nbeuzJpKSFfRPZ6cdRnR4VJnB85Taa5wlT&s" alt="foto launching">
+						Memperluas Pengetahuan Chatbot dengan Machine Reading <br>
+						<span class="text-muted">19/09/2019</span>
+					</p>
+				</div>
+				<hr>
+				<div class="card">
+					<p class="txt-pinggir">
+						<img class="float-left mr-3 img-thumbnail" style="width:50%; height: 40%;"
+						src="https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1551793023/d9rta2ccziep94oth81a.jpg" alt="foto launching">
+						How Artificial Intelligence Support the Financial Services<br>
+						<span class="text-muted">19/09/2019</span>
+					</p>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
 
 </body>
 </html>
